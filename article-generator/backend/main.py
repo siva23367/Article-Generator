@@ -1,5 +1,6 @@
 from fastapi import FastAPI, Depends, HTTPException, status
 from fastapi.middleware.cors import CORSMiddleware
+import os
 from fastapi.security import OAuth2PasswordRequestForm
 from fastapi.responses import JSONResponse
 from datetime import timedelta
@@ -30,12 +31,14 @@ app = FastAPI(title="Article Generator API")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://article-generator-iota.vercel.app/" ,"http://localhost:5173"],
+    allow_origins=[
+        "https://article-generator-iota.vercel.app", 
+        "http://localhost:5173"
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
-
 
 @app.post("/token")
 async def login(form_data: OAuth2PasswordRequestForm = Depends()):
