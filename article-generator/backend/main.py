@@ -30,7 +30,7 @@ app = FastAPI(title="Article Generator API")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://article-generator-backend-9hj2.onrender.com"],
+    allow_origins=["https://article-generator-iota.vercel.app/" ,"http://localhost:5173"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
