@@ -1,6 +1,16 @@
-# Tool-Grounded Article Generator
+# Tool-Grounded Article Generator 
 
 A lightweight content generation system that combines AI, web search, and full-stack functionality.
+
+## 🔗 Live Demo
+
+Access the deployed application here:
+
+👉 https://article-generator-iota.vercel.app/login
+
+## Demo Credentials
+- Username: `admin`
+- Password: `admin123`
 
 ## Features
 
@@ -111,6 +121,8 @@ Frontend will run at `http://localhost:5173`
 - `POST /api/generate-seo` - Generate SEO metadata
 - `POST /api/generate-html` - Generate HTML document
 - `POST /api/generate-full-article` - Generate all at once
+
+
 
 ## Project Structure
 
